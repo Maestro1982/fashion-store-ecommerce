@@ -108,6 +108,8 @@
 
 .i-title {
   font-size: 24px;
+  color: #6b0504;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
