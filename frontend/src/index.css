@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../public/assets/fonts/Roboto.ttf);
+}
+
+::selection {
+  background-color: lightgrey;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+body {
+  font-family: Roboto;
+}
+
+header,
+main,
+footer {
+  padding: 10px 15px;
+}

@@ -1,0 +1,161 @@
+/* Header */
+.h-container {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+  box-shadow: 0px 15px 10px -15px #241023;
+}
+
+.h-row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.h-col:first-child {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
+.h-logo {
+  flex: 1;
+}
+
+.h-logo,
+.logo {
+  font-size: 40px;
+  color: #241023;
+}
+
+.h-menu {
+  flex: 2;
+}
+
+.h-col:last-child {
+  flex: 1;
+}
+
+.menu-item,
+.second-menuItem {
+  display: flex;
+}
+
+.menu-item li {
+  margin-right: 20px;
+}
+
+.second-menuItem {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.second-menuItem li {
+  margin-left: 20px;
+}
+
+.menu-item li a,
+.second-menuItem li a {
+  position: relative;
+  color: #241023;
+}
+
+.menu-item li a::after,
+.second-menuItem li a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: #d5e68d;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.menu-item li a:hover::after,
+.second-menuItem li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.menu-badge {
+  font-size: 16px;
+  color: #241023;
+  font-weight: bold;
+}
+
+.i-container {
+  position: relative;
+  height: calc(100vh - 100px);
+  background: url('../public/assets/images/intro.jpg') 50% 50% no-repeat;
+}
+
+.i-col {
+  position: absolute;
+  right: 7%;
+  top: 3%;
+}
+
+.i-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.i-subtitle {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.i-shopBtn {
+  display: block;
+  background-color: #d5e68d;
+  padding: 10px 15px;
+  margin-top: 15px;
+  margin-left: 210px;
+  color: #241023;
+  width: max-content;
+  box-shadow: 0 0 3px #d5e68d;
+  transition: all 0.5s;
+}
+
+.i-shopBtn:hover {
+  background-color: #241023;
+  color: #d5e68d;
+}
+
+.i-colArrow {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+}
+
+.i-colArrow a {
+  font-size: 35px;
+  color: #d5e68d;
+  animation: arrow 2s linear infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
