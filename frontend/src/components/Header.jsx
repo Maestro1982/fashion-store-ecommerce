@@ -7,7 +7,7 @@ import {
   faCartShopping,
 } from '@fortawesome/free-solid-svg-icons';
 
-function Header() {
+const Header = () => {
   return (
     <div className='h-container'>
       <div className='h-row'>
@@ -72,6 +72,6 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

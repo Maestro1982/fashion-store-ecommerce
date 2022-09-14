@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-function Register() {
+const Register = () => {
   return (
     <div className='wrapper'>
       <header className='header'>
@@ -14,6 +14,6 @@ function Register() {
       </footer>
     </div>
   );
-}
+};
 
 export default Register;

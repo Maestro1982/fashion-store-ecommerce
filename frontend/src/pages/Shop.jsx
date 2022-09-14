@@ -2,7 +2,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
-function Shop() {
+const Shop = () => {
   return (
     <div className='wrapper'>
       <header className='header'>
@@ -14,6 +14,6 @@ function Shop() {
       </footer>
     </div>
   );
-}
+};
 
 export default Shop;

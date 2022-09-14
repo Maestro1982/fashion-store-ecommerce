@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDoubleDown } from '@fortawesome/free-solid-svg-icons';
 
-function Intro() {
+const Intro = () => {
   return (
     <div className='i-container'>
       <div className='i-row'>
@@ -22,6 +22,6 @@ function Intro() {
       </div>
     </div>
   );
-}
+};
 
 export default Intro;
