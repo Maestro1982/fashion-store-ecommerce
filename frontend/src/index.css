@@ -31,6 +31,10 @@ button {
   grid-template-rows: auto 1fr auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Roboto;
 }

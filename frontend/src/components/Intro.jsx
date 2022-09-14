@@ -15,9 +15,9 @@ const Intro = () => {
           </Link>
         </div>
         <div className='i-colArrow'>
-          <Link to='#blog'>
+          <a href='#blog'>
             <FontAwesomeIcon icon={faAngleDoubleDown} />
-          </Link>
+          </a>
         </div>
       </div>
     </div>
