@@ -207,7 +207,7 @@
   width: 80%;
   min-height: 60vh;
   box-shadow: 0 9px 0px 0px #ffffff, 0 -9px 0px 0px #ffffff,
-    12px 0 15px -4px #6b0504, -12px 0 15px -4px #6b0504;
+    12px 0 15px -4px #241023, -12px 0 15px -4px #241023;
 }
 
 .hb-blogs {
@@ -266,7 +266,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 60px;
   margin: 0 auto;
   width: 90%;
 }
@@ -275,8 +275,44 @@
   width: 250px;
 }
 
+.np-body {
+  height: 455px;
+}
+
 .product-img {
   width: 100%;
   box-shadow: 0 9px 0px 0px #ffffff, 0 -9px 0px 0px #ffffff,
-    12px 0 15px -4px #6b0504, -12px 0 15px -4px #6b0504;
+    12px 0 15px -4px #241023, -12px 0 15px -4px #241023;
+}
+
+.np-footer {
+  position: relative;
+  height: 100px;
+  padding: 0 5px;
+  background-color: #d5e68d;
+}
+
+.np-footerDiv {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d6e68d7a;
+  bottom: 0;
+  top: -40px;
+  width: calc(100% - 10px);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.np-category {
+  color: #241023;
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+
+.np-titleProduct,
+.np-price {
+  color: #241023;
 }
