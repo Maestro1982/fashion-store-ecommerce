@@ -16,7 +16,10 @@ const NewProduct = () => {
           <div className='np-footerDiv'>
             <span className='np-category'>Dresses</span>
             <h3 className='np-titleProduct'>Product 1</h3>
-            <span className='np-price'>€149.00</span>
+            <div className='np-footerSubDiv'>
+              <span className='np-price'>€149.00</span>
+              <span className='np-star'>4★</span>
+            </div>
           </div>
         </div>
       </Link>

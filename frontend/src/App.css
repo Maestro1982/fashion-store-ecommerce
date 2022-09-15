@@ -317,6 +317,18 @@
   color: #241023;
 }
 
+.np-footerSubDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.np-star {
+  font-size: 20px;
+  color: #241023;
+}
+
 /* Footer section*/
 .f-row {
   display: flex;
@@ -365,7 +377,7 @@
   font-size: 14px;
 }
 
-/* Login */
+/* Login & Register */
 .si-row {
   display: flex;
   justify-content: center;
@@ -448,4 +460,31 @@
 .si-formRegister a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Shop */
+.smp-title {
+  text-align: center;
+  color: #241023;
+  margin-bottom: 30px;
+}
+
+.smp-row:last-child {
+  display: flex;
+}
+
+.smp-col:first-child {
+  flex: 1;
+}
+
+.smp-col:last-child {
+  flex: 3;
+}
+
+.sf-group {
+  margin-top: 30px;
+}
+
+.sf-groupTitle {
+  font-size: 14px;
 }

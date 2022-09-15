@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import ShopMainPart from '../components/ShopMainPart';
 
 const Shop = () => {
   return (
@@ -8,7 +9,9 @@ const Shop = () => {
       <header className='header'>
         <Header />
       </header>
-      <main className='main'>Shop</main>
+      <main className='main'>
+        <ShopMainPart />
+      </main>
       <footer className='footer'>
         <Footer />
       </footer>
