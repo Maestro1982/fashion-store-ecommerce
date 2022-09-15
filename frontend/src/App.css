@@ -429,8 +429,8 @@
 }
 
 .si-loginBtn:hover {
-  background-color: #ffffff;
-  color: #241023;
+  background-color: #47a025;
+  color: #ffffff;
 }
 
 .si-formRegister {
@@ -482,9 +482,82 @@
 }
 
 .sf-group {
-  margin-top: 30px;
+  margin-top: 50px;
 }
 
 .sf-groupTitle {
   font-size: 14px;
+}
+
+.c-filterDiv,
+.s-filterDiv,
+.sc-filterDiv {
+  margin-top: 15px;
+}
+
+.c-filterBtns,
+.s-filterBtns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.c-btn,
+.s-btn {
+  background-color: #241023;
+  box-shadow: 0 0 4px #241023;
+  color: #ffffff;
+  border: none;
+  padding: 5px 15px;
+  transition: all 0.5s;
+}
+
+.c-btn:hover,
+.s-btn:hover {
+  background-color: #47a025;
+  color: #ffffff;
+}
+
+.s-filterInput {
+  height: 35px;
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.sc-checkbox {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #241023;
+}
+
+.sc-check {
+  cursor: pointer;
+  filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(85deg) brightness(102%)
+    contrast(107%);
+  width: 20px;
+  height: 20px;
+}
+
+.sc-filterLabel {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rc-slider-handle {
+  border-color: #241023 !important;
+}
+
+.rc-slider-track {
+  border-color: #241023 !important;
+}
+
+.rc-slider-dot-active {
+  border-color: #241023 !important;
+}
+
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+  box-shadow: 0 0 0 2px #241023 !important;
 }
