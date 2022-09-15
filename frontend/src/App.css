@@ -463,6 +463,10 @@
 }
 
 /* Shop */
+.smp-container {
+  margin: 50px 0;
+}
+
 .smp-title {
   text-align: center;
   color: #241023;
@@ -486,7 +490,7 @@
 }
 
 .sf-groupTitle {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .c-filterDiv,
@@ -560,4 +564,13 @@
 
 .rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
   box-shadow: 0 0 0 2px #241023 !important;
+}
+
+.sps-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: 50px;
 }

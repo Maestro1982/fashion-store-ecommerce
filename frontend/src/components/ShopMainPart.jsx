@@ -1,5 +1,6 @@
 import React from 'react';
 import ShopFilter from './ShopFilter';
+import ShopProducts from './ShopProducts';
 
 const ShopMainPart = () => {
   return (
@@ -14,7 +15,9 @@ const ShopMainPart = () => {
             <ShopFilter />
           </div>
         </div>
-        <div className='smp-col'>B</div>
+        <div className='smp-col'>
+          <ShopProducts />
+        </div>
       </div>
     </div>
   );

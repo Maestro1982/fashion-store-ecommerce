@@ -54,7 +54,7 @@ const Header = () => {
                     <FontAwesomeIcon icon={faHeart} />
                     <span className='menu-badge'>0</span>
                   </div>
-                  <span>Wish List</span>
+                  <span>Wish</span>
                 </Link>
               </li>
               <li>
