@@ -316,3 +316,136 @@
 .np-price {
   color: #241023;
 }
+
+/* Footer section*/
+.f-row {
+  display: flex;
+}
+
+.f-row:first-child {
+  margin-bottom: 30px;
+}
+
+.f-col {
+  flex: 1;
+  text-align: center;
+}
+
+.f-col a {
+  position: relative;
+  color: #241023;
+  font-size: 20px;
+}
+
+.f-col a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: #d5e68d;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.f-col a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.f-copyright {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.f-copyright span {
+  font-size: 14px;
+}
+
+/* Login */
+.si-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.si-formGroups {
+  width: 500px;
+  border: 1px solid #241023;
+  padding: 5px;
+  box-shadow: 0 0 2px #241023;
+}
+
+.si-title {
+  text-align: center;
+  color: #241023;
+  margin: 20px 0 30px 0;
+}
+
+.si-formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.si-label {
+  margin-bottom: 5px;
+}
+
+.si-input {
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #241023;
+  padding: 5px;
+}
+
+.si-loginBtn {
+  padding: 10px;
+  display: block;
+  margin: 0 auto;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  background-color: #241023;
+  box-shadow: 0 0 4px #241023;
+  color: #ffffff;
+  border: none;
+  letter-spacing: 2px;
+}
+
+.si-loginBtn:hover {
+  background-color: #ffffff;
+  color: #241023;
+}
+
+.si-formRegister {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.si-formRegister a {
+  color: #241023;
+  font-size: 14px;
+  position: relative;
+}
+
+.si-formRegister a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: #d5e68d;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.si-formRegister a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

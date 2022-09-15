@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import SignIn from '../components/SignIn';
 
 const Login = () => {
   return (
@@ -8,7 +9,9 @@ const Login = () => {
       <header className='header'>
         <Header />
       </header>
-      <main className='main'>Login</main>
+      <main className='main'>
+        <SignIn />
+      </main>
       <footer className='footer'>
         <Footer />
       </footer>
