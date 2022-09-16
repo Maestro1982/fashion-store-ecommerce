@@ -23,9 +23,11 @@ const WishListItem = () => {
           </div>
         </div>
       </Link>
-      <button className='w-trashBtn'>
-        <span className='w-trash'>Delete</span>
-      </button>
+      <div className='ci-otherDiv'>
+        <button className='w-trashBtn'>
+          <span className='w-trash'>Delete</span>
+        </button>
+      </div>
     </div>
   );
 };
