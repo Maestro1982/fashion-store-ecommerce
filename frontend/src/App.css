@@ -262,7 +262,8 @@
   color: #241023;
 }
 
-.nps-groups {
+.nps-groups,
+.w-groups {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -463,11 +464,15 @@
 }
 
 /* Shop */
-.smp-container {
+.smp-container,
+.w-container,
+.ci-container {
   margin: 50px 0;
 }
 
-.smp-title {
+.smp-title,
+.w-title,
+.ci-title {
   text-align: center;
   color: #241023;
   margin-bottom: 30px;
@@ -573,4 +578,63 @@
   flex-wrap: wrap;
   gap: 30px;
   margin-left: 50px;
+}
+
+/* Wish List*/
+.w-trash {
+  color: rgb(224, 10, 10);
+  font-size: 20px;
+}
+
+.w-trashBtn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  margin: 15px auto 0 auto;
+}
+
+.w-trash:hover {
+  color: #47a025;
+}
+
+/* Shopping Cart*/
+.ci-row {
+  display: flex;
+}
+
+.ci-col:first-child {
+  flex: 3;
+}
+
+.ci-col:last-child {
+  flex: 1;
+}
+
+.ci-otherDiv {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #24102342;
+}
+
+.w-trashBtn.cart-trash {
+  margin: unset !important;
+}
+
+.ci-minus,
+.ci-plus {
+  background: none !important;
+  border: none !important;
+  font-size: 30px;
+  color: #241023;
+  margin: 0 10px;
+}
+
+.ci-minus:hover,
+.ci-plus:hover {
+  color: #2410238e;
+}
+
+.ci-quantity {
+  font-size: 22px;
 }
