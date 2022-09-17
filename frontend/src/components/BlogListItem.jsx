@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const HomeBlogItem = () => {
+const BlogListItem = () => {
   return (
     <div className='hb-blog'>
-      <Link to='/blog:45654789'>
+      <Link to='/blog:987456321'>
         <h3 className='hb-blogTitle'>Title One</h3>
         <p className='hb-desc'>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
@@ -22,4 +22,4 @@ const HomeBlogItem = () => {
   );
 };
 
-export default HomeBlogItem;
+export default BlogListItem;
