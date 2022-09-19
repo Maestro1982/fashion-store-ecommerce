@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const NewProduct = () => {
   return (
     <div className='np-group'>
-      <Link to='/product'>
+      <Link to='/product:0123456987'>
         <div className='np-body'>
           <img
             src='./assets/products/product1.jpg'

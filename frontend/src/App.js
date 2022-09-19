@@ -8,6 +8,7 @@ import ShoppingCart from './pages/ShoppingCart';
 import Account from './pages/Account';
 import Blog from './pages/Blog';
 import BlogItem from './components/BlogItem';
+import Product from './pages/Product';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path='/account' element={<Account />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/blog:id' element={<BlogItem />} />
+          <Route path='/product:id' element={<Product />} />
         </Routes>
       </Router>
     </>

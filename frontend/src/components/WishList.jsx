@@ -1,5 +1,5 @@
 import React from 'react';
-import WishListItem from './filterPartials/WishListItem';
+import WishListItem from './WishListItem';
 
 const WishList = () => {
   return (

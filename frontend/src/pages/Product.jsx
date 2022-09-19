@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import ProductDetails from '../components/ProductDetails';
 
 const Product = () => {
   return (
@@ -8,7 +9,9 @@ const Product = () => {
       <header className='header'>
         <Header />
       </header>
-      <main className='main'>Product</main>
+      <main className='main'>
+        <ProductDetails />
+      </main>
       <footer className='footer'>
         <Footer />
       </footer>
