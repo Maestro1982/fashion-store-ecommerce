@@ -1,7 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
+import Checkout from '../pages/Checkout';
 import CartItem from './CartItem';
 
 const CartItems = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className='ci-container'>
       <div className='w-row'>
@@ -39,11 +42,12 @@ const CartItems = () => {
               </div>
             </div>
             <div className='bill-btn'>
-              <button>Checkout</button>
+              <button onClick={() => setIsOpen(true)}>Checkout</button>
             </div>
           </div>
         </div>
       </div>
+      {isOpen && <Checkout setIsOpen={setIsOpen} />}
     </div>
   );
 };

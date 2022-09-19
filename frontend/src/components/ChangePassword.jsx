@@ -11,7 +11,7 @@ const ChangePassword = () => {
               <label htmlFor='o_password' className='cp-label'>
                 Old Password
               </label>
-              <input type='o_password' id='password' className='cp-input' />
+              <input type='o_password' id='o_password' className='cp-input' />
             </div>
             <div className='cp-formGroup'>
               <label htmlFor='password' className='cp-label'>

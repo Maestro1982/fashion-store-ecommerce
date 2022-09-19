@@ -1,10 +1,59 @@
 import React from 'react';
+import { useState } from 'react';
+import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 
 const ProductDetails = () => {
+  const [selectedImg, setSelectedImg] = useState('');
   return (
     <div className='pd-container'>
       <div className='pd-row'>
-        <div className='pd-col'>a</div>
+        <div className='pd-col'>
+          <div className='pd-imageDiv'>
+            <div className='pd-top'>
+              <TransformWrapper>
+                <TransformComponent>
+                  <img
+                    src={selectedImg || './assets/products/product1.jpg'}
+                    alt=''
+                    className='pd-img'
+                  />
+                </TransformComponent>
+              </TransformWrapper>
+            </div>
+            <div className='pd-bottom'>
+              <img
+                src='./assets/products/product1.jpg'
+                alt=''
+                className='pd-smallImg'
+                onClick={() => setSelectedImg('./assets/products/product1.jpg')}
+              />
+              <img
+                src='./assets/products/product1-2.jpg'
+                alt=''
+                className='pd-smallImg'
+                onClick={() =>
+                  setSelectedImg('./assets/products/product1-2.jpg')
+                }
+              />
+              <img
+                src='./assets/products/product1-3.jpg'
+                alt=''
+                className='pd-smallImg'
+                onClick={() =>
+                  setSelectedImg('./assets/products/product1-3.jpg')
+                }
+              />
+              <img
+                src='./assets/products/product1-4.jpg'
+                alt=''
+                className='pd-smallImg'
+                onClick={() =>
+                  setSelectedImg('./assets/products/product1-4.jpg')
+                }
+              />
+            </div>
+          </div>
+        </div>
         <div className='pd-col'>
           <div className='pd-groups'>
             <div className='pd-group'>
@@ -24,6 +73,11 @@ const ProductDetails = () => {
                 fugit hic perferendis, aliquam deleniti sint eveniet facilis at,
                 dolores fuga blanditiis soluta harum autem ratione modi, ad
                 totam impedit rerum amet!
+              </p>
+            </div>
+            <div className='pd-group'>
+              <p className='pd-quantity'>
+                Quantity: <span className='pd-quantityNumber'>1</span>
               </p>
             </div>
             <div className='pd-group'>
@@ -65,6 +119,12 @@ const ProductDetails = () => {
                     <label htmlFor='blue'>Blue</label>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div className='pd-group'>
+              <div className='pd-btnsGroup'>
+                <button className='pd-wishBtn'>Add to Wish</button>
+                <button className='pd-cartBtn'>Add to Cart</button>
               </div>
             </div>
           </div>

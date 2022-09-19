@@ -819,3 +819,152 @@
   background-color: #47a025;
   color: #ffffff;
 }
+
+.pd-btnsGroup {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.pd-btnsGroup button {
+  padding: 10px 15px;
+  transition: all 0.5s;
+  border: none;
+  box-shadow: 0 0 3px #241023;
+}
+
+.pd-btnsGroup .pd-wishBtn {
+  background-color: darkmagenta;
+  color: #ffffff;
+}
+
+.pd-btnsGroup .pd-cartBtn {
+  background-color: #241023;
+  color: #ffffff;
+}
+
+.pd-btnsGroup .pd-wishBtn:hover {
+  background-color: #47a025;
+  color: #ffffff;
+}
+
+.pd-btnsGroup .pd-cartBtn:hover {
+  background-color: #47a025;
+  color: #ffffff;
+}
+
+.pd-quantity {
+  color: #241023;
+  font-weight: 600;
+}
+
+.pd-quantityNumber {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.pd-top {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.pd-img {
+  width: 40%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.pd-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pd-smallImg {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  padding: 5px;
+}
+
+/* CHECKOUT */
+.co-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: #24102383;
+}
+
+.co-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.co-container form {
+  width: 500px;
+  background-color: #ffffff;
+  padding: 30px 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.co-container form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.co-container form .form-group label {
+  margin-bottom: 5px;
+}
+
+.co-container form .form-group input {
+  height: 40px;
+  border: 1px solid #241023;
+  padding: 5px 15px;
+  outline: none;
+  color: #6b0504;
+}
+
+.close-form {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: -15px;
+  top: -15px;
+  width: 35px;
+  height: 35px;
+  background-color: #6b0504;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.co-btn button {
+  background-color: #241023;
+  color: #ffffff;
+  padding: 5px 15px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 3px #241023;
+  transition: all 0.5s;
+  border: none;
+}
+
+.co-btn button:hover {
+  background-color: #47a025;
+  box-shadow: 0 0 3px #47a025;
+}
