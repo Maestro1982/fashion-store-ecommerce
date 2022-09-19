@@ -2,6 +2,7 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import seedRouter from './routes/seedRoute.js';
+import userRouter from './routes/userRoute.js';
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Router
 app.use('/api/seed', seedRouter);
+app.use('/api/users', userRouter);
 
 // Connect with db
 dotenv.config();
