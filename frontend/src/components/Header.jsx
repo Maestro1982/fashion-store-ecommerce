@@ -8,6 +8,9 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
+  const userInfo = localStorage.getItem('userInfo')
+    ? JSON.parse(localStorage.getItem('userInfo'))
+    : null;
   return (
     <div className='h-container'>
       <div className='h-row'>
@@ -34,25 +37,39 @@ const Header = () => {
                   Blog
                 </Link>
               </li>
-              <li>
-                <Link to='/account' className='menu-link'>
-                  Account
-                </Link>
-              </li>
+              {userInfo && (
+                <li>
+                  <Link to='/account' className='menu-link'>
+                    Account
+                  </Link>
+                </li>
+              )}
             </ul>
           </div>
         </div>
         <div className='h-col'>
           <div className='h-secondMenu'>
             <ul className='second-menuItem'>
-              <li>
-                <Link to='/login' className='second-menuLink'>
-                  <div className='menu-div'>
-                    <FontAwesomeIcon icon={faRightToBracket} />
-                  </div>
-                  <span>Login</span>
-                </Link>
-              </li>
+              {userInfo ? (
+                <li>
+                  <span className='second-menuLink'>
+                    <div className='menu-div'>
+                      <FontAwesomeIcon icon={faRightToBracket} />
+                    </div>
+                    <span>Logout</span>
+                  </span>
+                </li>
+              ) : (
+                <li>
+                  <Link to='/login' className='second-menuLink'>
+                    <div className='menu-div'>
+                      <FontAwesomeIcon icon={faRightToBracket} />
+                    </div>
+                    <span>Login</span>
+                  </Link>
+                </li>
+              )}
+
               <li>
                 <Link to='/wish' className='second-menuLink'>
                   <div className='menu-div'>

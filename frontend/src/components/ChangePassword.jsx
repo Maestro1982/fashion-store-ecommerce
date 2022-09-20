@@ -2,7 +2,7 @@ import React from 'react';
 
 const ChangePassword = () => {
   return (
-    <div className='cp-container'>
+    <div className='si-container'>
       <div className='cp-row'>
         <div className='cp-formGroups'>
           <form>
