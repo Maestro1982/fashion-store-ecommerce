@@ -1,6 +1,9 @@
 import React from 'react';
 
 const AboutMe = () => {
+  const userInfo = localStorage.getItem('userInfo')
+    ? JSON.parse(localStorage.getItem('userInfo'))
+    : null;
   return (
     <div className='am-container'>
       <div className='am-row'>
@@ -16,7 +19,7 @@ const AboutMe = () => {
           />
         </div>
         <div className='am-right'>
-          <h3 className='am-fullName'>Kris Toté</h3>
+          <h3 className='am-fullName'>{userInfo.username}</h3>
         </div>
       </div>
     </div>

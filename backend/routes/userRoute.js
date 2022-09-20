@@ -16,6 +16,7 @@ userRouter.post('/login', async (req, res) => {
         _id: user._id,
         username: user.username,
         email: user.email,
+        password: user.password,
         isAdmin: user.isAdmin,
       });
 
@@ -39,6 +40,31 @@ userRouter.post('/register', async (req, res) => {
     email: user.email,
     isAdmin: user.isAdmin,
   });
+});
+
+// For update user
+userRouter.put('/update', async (req, res) => {
+  const user = await User.findById(req.body._id);
+  // If user exists
+  if (user) {
+    // If you want to update username or email
+    user.username = req.body.username || user.username;
+    user.email = req.body.email || user.email;
+    // I will just update the password
+    if (req.body.password) {
+      user.password = bcrypt.hashSync(req.body.password);
+    }
+
+    const updatedUser = await user.save();
+    res.send({
+      _id: updatedUser._id,
+      username: updatedUser.username,
+      email: updatedUser.email,
+      isAdmin: updatedUser.isAdmin,
+    });
+  } else {
+    res.status(401).send({ message: 'User not Found!' });
+  }
 });
 
 // Get all users for admin panel

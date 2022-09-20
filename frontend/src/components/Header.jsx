@@ -1,16 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faRightToBracket,
   faHeart,
   faCartShopping,
 } from '@fortawesome/free-solid-svg-icons';
+import { toast } from 'react-toastify';
 
 const Header = () => {
+  const navigate = useNavigate();
   const userInfo = localStorage.getItem('userInfo')
     ? JSON.parse(localStorage.getItem('userInfo'))
     : null;
+
+  const logoutHandler = () => {
+    localStorage.removeItem('userInfo');
+    toast.success('You have successfully logged out!');
+    navigate('/login');
+  };
+
   return (
     <div className='h-container'>
       <div className='h-row'>
@@ -51,14 +60,34 @@ const Header = () => {
           <div className='h-secondMenu'>
             <ul className='second-menuItem'>
               {userInfo ? (
-                <li>
-                  <span className='second-menuLink'>
-                    <div className='menu-div'>
-                      <FontAwesomeIcon icon={faRightToBracket} />
-                    </div>
-                    <span>Logout</span>
-                  </span>
-                </li>
+                <>
+                  <li>
+                    <span className='second-menuLink'>
+                      <div className='menu-div'>
+                        <FontAwesomeIcon icon={faRightToBracket} />
+                      </div>
+                      <span onClick={logoutHandler}>Logout</span>
+                    </span>
+                  </li>
+                  <li>
+                    <Link to='/wish' className='second-menuLink'>
+                      <div className='menu-div'>
+                        <FontAwesomeIcon icon={faHeart} />
+                        <span className='menu-badge'>0</span>
+                      </div>
+                      <span>Wish</span>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to='/shopping-cart' className='second-menuLink'>
+                      <div className='menu-div'>
+                        <FontAwesomeIcon icon={faCartShopping} />
+                        <span className='menu-badge'>0</span>
+                      </div>
+                      <span>Cart</span>
+                    </Link>
+                  </li>
+                </>
               ) : (
                 <li>
                   <Link to='/login' className='second-menuLink'>
@@ -69,25 +98,6 @@ const Header = () => {
                   </Link>
                 </li>
               )}
-
-              <li>
-                <Link to='/wish' className='second-menuLink'>
-                  <div className='menu-div'>
-                    <FontAwesomeIcon icon={faHeart} />
-                    <span className='menu-badge'>0</span>
-                  </div>
-                  <span>Wish</span>
-                </Link>
-              </li>
-              <li>
-                <Link to='/shopping-cart' className='second-menuLink'>
-                  <div className='menu-div'>
-                    <FontAwesomeIcon icon={faCartShopping} />
-                    <span className='menu-badge'>0</span>
-                  </div>
-                  <span>Cart</span>
-                </Link>
-              </li>
             </ul>
           </div>
         </div>
